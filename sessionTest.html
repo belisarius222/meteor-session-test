@@ -1,0 +1,13 @@
+<head>
+  <title>sessionTest</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{sessionEquals 'foo' 'bar'}}<br>
+  {{sessionEquals 'foo' false}}<br>
+  {{sessionEquals 'foo' 1}}
+</template>
